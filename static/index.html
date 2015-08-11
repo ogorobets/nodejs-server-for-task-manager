@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>To-do-app</title>
+		<link rel="stylesheet" href="css/todoapp.css">
+		<script src="js/lib/jquery-1.11.0.min.js"></script>
+		<script src="js/src/todoapp.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body class="app-container">
+		<section id="tasklistapp">
+			<section id="todo-list-list">
+				<header id="todo-list-header">
+					<h1>Task list</h1>
+					<input placeholder="Write down title of new task list." class="todo-list-input">
+				</header>
+				<section class="tasklist-list">
+					<label for="todo-list-title">Task list:</label>
+					<select id="todo-list-title">
+						<option value="0">No task list selected</option>
+					</select>
+					<button class="destroy-list"></button>
+				</section>
+			</section>
+			<section id="current-task-list">
+				<header id="current-task-list-header">
+					<input id="new-todo" placeholder="What needs to be done?" autofocus="">
+				</header>
+				<section id="current-task-list-main">
+					<input id="toggle-all" type="checkbox">
+					<ul id="todo-list-tasks"></ul>
+				</section>
+			</section>
+			<footer id="current-task-list-footer">
+				<ul id="current-task-list-filters">
+					<li>
+						<a class="selected" href="#/">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+			</footer>
+		</section>
+	</body>
+</html>
